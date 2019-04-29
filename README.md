@@ -1,8 +1,8 @@
-# Page Generator
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Generate a page based on the url slug
 
 I needed a way to test external links were correct based on different locales and this was the result.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -35,12 +35,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - **Is it secure?**
 
-  Probably not. I've not really tested it properly but it doesn't `dangerouslySetInnerHtml` so it might be OK.
+  It is or it isn't. I've not really tested it properly but it doesn't `dangerouslySetInnerHtml` so it might be OK.
 
-- **What about script injection**
+- **Does it render any markup?**
 
-  It doesn't load the route so again you might be OK.
+  Adding a closing tag means it doesn't load the route so no it won't render markup but will fail catastrophically instead.
 
-- **Can I use it in production**
+- **Isn't that a bit of a problem?**
 
-  You can. Should you? Probably not 🤷🏽‍♀️
+  Yeah, but it was never designed to do more than show text so 🤷🏽‍♀️.
+
+- **Can I use it in production?**
+
+  If you really want to. Maybe don't have it anywhere you care about though.
